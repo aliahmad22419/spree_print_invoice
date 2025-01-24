@@ -108,7 +108,7 @@ module Spree
     #
     def render_pdf
       ApplicationController.render(
-        template: "#{template_name}.pdf.prawn",
+        template: "#{template_name}",
         assigns: { doc: self }
       )
     end
